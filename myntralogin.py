@@ -9,6 +9,8 @@ url = 'https://www.myntra.com/'
 
 options = Options() 
 # options.headless = True # Set true for headless
+
+# Add args to use default chrome profile for already logged in sessions
 options.add_argument('--profile-directory=Profile 1')
 options.add_argument("user-data-dir=home/abdulla/.config/google-chrome/Default") 
 driver = webdriver.Chrome(options=options)
